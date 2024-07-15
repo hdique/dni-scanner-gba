@@ -5,6 +5,4 @@ services:
     build: .
     container_name: server-gba
     ports:
-      - "8089:9000"
-    volumes:
-      - ./html:/app
+      - "8008:80"

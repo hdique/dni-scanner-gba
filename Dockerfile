@@ -1,9 +1,9 @@
-FROM php:7.4-fpm
+FROM php:7.4-apache
 
-WORKDIR /app
+# WORKDIR /app
 
-COPY html .
+COPY /src /var/www/html
 
-EXPOSE 9000
+EXPOSE 80
 
-CMD ["php-fpm", "-i", "-d", "display_errors=On"]
+# CMD ["php-fpm", "-i", "-d", "display_errors=On"]
