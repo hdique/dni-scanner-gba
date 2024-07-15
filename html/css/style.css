@@ -1,0 +1,225 @@
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@font-face {
+font-family: "EncodeSans-Light";
+src: url("../fonts/EncodeSans-Light.ttf") format("opentype");
+}
+
+/*navbar*/
+.nav-wrapper  {
+  font-family:"EncodeSans-Light";
+  background-color: #009aae;
+}
+
+#navbar-img-user {
+  border-left: 1px solid #fff; 
+  padding: 0 5px;
+}
+
+.navbar-img-user {
+  display: inline-flex;
+}
+
+/**/
+
+/*modificar.php*/
+.lightBlue {
+  color:#009aae;
+}
+
+.darkGrey {
+  color:#414042;
+}
+/**/
+i.icon-lightBlue {
+  color: #009aae;
+}
+
+i.icon-darkGrey {
+  color: #414042;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family:"EncodeSans-Light";
+}
+
+table, p {
+  font-family:'EncodeSans-Light';
+}
+
+.waves-effect, .label_1, .container  {
+  font-family:'EncodeSans-Light';
+} 
+
+.botonGris:hover {
+  background-color: #009aae !important;
+}
+
+/* estilos tabla */
+.col.s6 > .btn {
+  width: 200px;
+}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+}
+
+th {
+  cursor: pointer;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+/* estilos tabla */
+
+
+/* label underline focus color */
+.input-field input[type=text], input[type=number],input[type=datetime]:focus, .materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #009aae !important;
+  box-shadow: 0 0px 0 0 #009aae !important;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+  color: #009aae !important;
+}
+
+.input-field input[type=number]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+  color: #009aae !important;
+}
+
+    
+body {
+     display: flex;
+     min-height: 100vh;
+     flex-direction: column;
+ }
+ main {
+     flex: 1 0 auto;
+ }
+
+/* toast */
+#toast-container .toast {
+    cursor: pointer;
+}
+#toast-container .toast::after {
+  font-family: 'Material Icons';
+  content: "close";
+  -webkit-font-feature-settings: 'liga';
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-left: 3rem;
+  bottom: 75%;
+  left:15%;  
+  top: auto !important;
+  right: auto !important;
+}
+  
+/* grilla */ 
+table#registros td{
+	padding: 8px 4px;
+}
+
+table#registros td{
+	padding: 8px 4px;
+}
+
+/* */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; 
+}
+
+.fondo_entrada{background-color: #4CAF50}
+.fondo_salida{background-color: #F44336}
+.fondo_warnning{background-color: #FFCE00}
+
+
+/* footer */
+.page-footer{
+  color:#fff;
+  background-color: #414042
+}
+
+.page-footer .footer-copyright{
+  color:rgba(255,255,255,0.8);
+  background-color:rgba(51,51,51,0.08)
+}
+
+a {
+    color: #414042;
+}
+
+/* */
+#columnaAmarilla {
+padding-top: 4px;
+padding-bottom: 4px;
+padding-left: 6px;
+padding-right: 6px;
+}
+/* custom materialize.min.css */
+
+.teal.lighten-1{background-color:#009aae !important}
+.teal-text.text-lighten-1{color:#009aae !important}
+.collection .collection-item.active{background-color:#009aae;}
+.collection a.collection-item{color:#009aae}
+.secondary-content{color:#009aae}
+.progress .determinate{background-color:#009aae}
+.progress .indeterminate{background-color:#009aae}
+span.badge.new{background-color:#009aae}
+.btn,.btn-large,.btn-small{background-color:#009aae}
+.btn-floating{background-color:#009aae}
+.btn-floating:hover{background-color:#009aae}
+.fixed-action-btn .fab-backdrop{background-color:#009aae}
+.dropdown-content li>a,.dropdown-content li>span{color:#009aae}
+.chip:focus{background-color:#009aae}
+.chips.focus{border-bottom:1px solid #009aae; -webkit-box-shadow:0 1px 0 0 #009aae;box-shadow:0 1px 0 0 #009aae}
+textarea.materialize-textarea:focus:not([readonly]){border-bottom:1px solid #009aae; -webkit-box-shadow:0 1px 0 0 #009aae;box-shadow:0 1px 0 0 #009aae}
+textarea.materialize-textarea:focus:not([readonly])+label{color:#009aae}
+.input-field .prefix.active{color:#009aae}
+[type="radio"].with-gap:checked+span:after{border:2px solid #009aae}
+[type="radio"].with-gap:checked+span:after{background-color:#009aae}
+[type="checkbox"]:checked+span:not(.lever):before{border-right:2px solid #009aae; border-bottom:2px solid #009aae}
+[type="checkbox"]:indeterminate+span:not(.lever):before{border-right:2px solid #009aae}
+[type="checkbox"].filled-in:checked+span:not(.lever):after{border:2px solid #009aae;background-color:#009aae}
+[type="checkbox"].filled-in.tabbed:checked:focus+span:not(.lever):after{background-color:#009aae;border-color:#009aae}
+.switch label input[type=checkbox]:checked+.lever:after{background-color:#009aae}
+.select-wrapper input.select-dropdown:focus{border-bottom:1px solid #009aae}
+input[type=range]+.thumb{background-color:#009aae}
+input[type=range]+.thumb .value{color:#009aae}
+input[type=range]::-webkit-slider-thumb{background:#009aae; background-color:#009aae}
+input[type=range]::-moz-range-thumb{background:#009aae}
+input[type=range]::-ms-thumb{background:#009aae}
+.sidenav li>a.btn-floating:hover{background-color:#009aae}
+.spinner-layer{border-color:#009aae}
+.datepicker-date-display{background-color:#009aae}
+.datepicker-table td.is-today{color:#009aae}
+.datepicker-table td.is-selected{background-color:#009aae;color:#fff}
+.datepicker-cancel,.datepicker-clear,.datepicker-today,.datepicker-done{color:#009aae}
+.timepicker-digital-display{background-color:#009aae}
+.timepicker-canvas line{stroke:#009aae}
+.timepicker-canvas-bearing{stroke:none;fill:#009aae}
+.timepicker-canvas-bg{stroke:none;fill:#009aae}
+.timepicker-close{color:#009aae}
+
+
+.switch label .lever:before{background-color:rgba(0,154,174,0.15)}
+.tabbed:focus ~ .lever::before{background-color:rgba(0,154,174,0.15)}
+.keyboard-focused input[type=range]:focus:not(.active)::-webkit-slider-thumb{-webkit-box-shadow:0 0 0 10px rgba(0,154,174,0.26);box-shadow:0 0 0 10px rgba(0,154,174,0.26)}
+.keyboard-focused input[type=range]:focus:not(.active)::-moz-range-thumb{box-shadow:0 0 0 10px rgba(0,154,174,0.26)}
+.keyboard-focused input[type=range]:focus:not(.active)::-ms-thumb{box-shadow:0 0 0 10px rgba(0,154,174,0.26)}
+.timepicker-tick.active,.timepicker-tick:hover{background-color:rgba(0,154,174,0.25)}
+
+input[type=checkbox]:checked:not(:disabled) ~ .lever:active::before,input[type=checkbox]:checked:not(:disabled).tabbed:focus ~ .lever::before{background-color:rgba(0,154,174,0.15)}
+
+
+.btn:hover,.btn-large:hover,.btn-small:hover{background-color:#1da7b9}
+.sidenav li>a.btn:hover,.sidenav li>a.btn-large:hover,.sidenav li>a.btn-small:hover,.sidenav li>a.btn-large:hover{background-color:#1da7b9}
+button:focus{outline:none;background-color:#1da7b9}
