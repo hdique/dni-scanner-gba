@@ -1,10 +1,10 @@
 version: '3.3'
 
 services:
-  nginx:
-    image: nginx:latest
-    container_name: nginx
+  server:
+    build: .
+    container_name: server-gba
     ports:
-      - "8089:80"
+      - "8089:9000"
     volumes:
-      - ./html:/usr/share/nginx/html:ro
+      - ./html:/app
