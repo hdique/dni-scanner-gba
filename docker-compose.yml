@@ -2,21 +2,21 @@ version: '3.3'
 
 services:
   db:
-  image: mariadb:latest
-  container_name: dni-scanner-gba-db
-  # command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
-  volumes:
-    - ./db:/var/lib/mysql
-  environment:
-    # - MYSQL_ROOT_PASSWORD=mysqlrootpass
-    MYSQL_ROOT_PASSWORD: my_root_password
-    MYSQL_DATABASE: dni_scanner_gba
-    MYSQL_USER: my_user
-    MYSQL_PASSWORD: my_password
+    image: mariadb:latest
+    container_name: dni-scanner-gba-db
+    # command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
+    volumes:
+      - ./db:/var/lib/mysql
+    environment:
+      # - MYSQL_ROOT_PASSWORD=mysqlrootpass
+      MYSQL_ROOT_PASSWORD: my_root_password
+      MYSQL_DATABASE: dni_scanner_gba
+      MYSQL_USER: my_user
+      MYSQL_PASSWORD: my_password
 
-  # env_file:
-    # - db.env
-  restart: always
+    # env_file:
+      # - db.env
+    restart: always
 
   server:
     build: .
