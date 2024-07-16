@@ -2,7 +2,6 @@ FROM php:7.4-apache
 
 # Actualizar los paquetes del sistema y limpiar la caché
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
-  php-mysqli \
   libpng-dev \
   libjpeg-dev \
   libfreetype6-dev \
